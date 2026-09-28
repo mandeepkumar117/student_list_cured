@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Student</title>
+</head>
+
+<body>
+
+    <h1>Add Student</h1>
+
+    <form method="POST">
+
+        {% csrf_token %}
+
+        <label>Student Name:</label>
+        <input type="text" name="student_name">
+
+        <br><br>
+
+        <label>Student Email:</label>
+        <input type="email" name="student_email">
+
+        <br><br>
+
+        <label>Student Course:</label>
+        <input type="text" name="student_course">
+
+        <br><br>
+
+        <label>Student Fees:</label>
+        <input type="number" name="student_fees">
+
+        <br><br>
+
+        <button type="submit">Add Student</button>
+
+    </form>
+
+</body>
+</html>
